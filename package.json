@@ -1,0 +1,25 @@
+{
+  "name": "smart-claude",
+  "version": "2.0.0",
+  "description": "Token optimization hook for Claude Code — analyzes prompts and suggests improvements to reduce token usage",
+  "type": "module",
+  "bin": {
+    "smart-claude": "./bin/smart-claude.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "token-optimization",
+    "prompt-engineering",
+    "cli-hook"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "gpt-tokenizer": "^2.1.0",
+    "string-similarity": "^4.0.4"
+  }
+}
