@@ -15,12 +15,21 @@ When your prompt is clean, the hook stays silent.
 
 ## Install
 
+### Option 1: From npm
+
 ```bash
 npm install -g smart-claude
 smart-claude install
 ```
 
-This adds a `UserPromptSubmit` hook to your `~/.claude/settings.json`. The hook runs on every prompt with a 5-second timeout.
+### Option 2: From GitHub
+
+```bash
+npm install -g github:yetanotherse/smart-claude
+smart-claude install
+```
+
+Both options add a `UserPromptSubmit` hook to your `~/.claude/settings.json`. The hook runs on every prompt with a 5-second timeout.
 
 ## Uninstall
 
@@ -71,7 +80,7 @@ User prompt → hook.js → analyze → format markdown → stdout → Claude se
 ## Development
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/yetanotherse/smart-claude.git
 cd smart-claude
 npm install
 npm test
